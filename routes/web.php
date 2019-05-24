@@ -11,8 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/{name}/{age}', function ($name,$age) {
+
+    return view('welcome',compact('name','age'));
 });
 
 Route::get('/about', function () {
