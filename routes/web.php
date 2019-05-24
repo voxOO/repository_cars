@@ -19,3 +19,5 @@ Route::get('/{name}/{age}', function ($name,$age) {
 Route::get('/about', function () {
     echo "ABOUT US";
 });
+
+Route::get('/cars', 'CarsController@index');
