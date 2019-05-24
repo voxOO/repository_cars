@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+@extends('layouts.master')
 
+    @section('content')
 
-<body>
+  
+        <h3>
+            Model:{{$car->title}}
+        </h3>
+        <div>
+            <p>
+            Producer:{{$car->producer}}
+            </p>
+            <p>
+            Number of doors:{{$car->number_of_doors}}
+            </p>
+        </div>
+   
 
-    <h1>
-        {{$car->title}}
-    </h1>
-    <p>
-        {{$car->producer}}
-    </p>
-    <p>
-        {{$car->number_of_doors}}
-    </p>
-
-</body>
-</html>
+    @endsection

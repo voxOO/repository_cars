@@ -13,7 +13,7 @@
 
 
 Route::get('/about', function () {
-    echo "ABOUT US";
+    return view('car/about');
 });
 
 Route::get('/cars', 'CarsController@index');
