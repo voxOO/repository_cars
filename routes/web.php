@@ -11,13 +11,16 @@
 |
 */
 
-Route::get('/{name}/{age}', function ($name,$age) {
-
-    return view('welcome',compact('name','age'));
-});
 
 Route::get('/about', function () {
     echo "ABOUT US";
 });
 
 Route::get('/cars', 'CarsController@index');
+Route::get('/cars/{id}','CarsController@show');
+
+
+Route::get('/{name}/{age}', function ($name,$age) {
+
+    return view('welcome',compact('name','age'));
+});
